@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #58B036;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 300px; 
+    height: auto; 
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #5de527;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #58B036;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.footer-nav a:hover {
+    background-color: #5de527; 
+}
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #58B036;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #5de527;
+}
+
+/* Container principal da introdução */
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Estilização do texto da introdução */
+.intro-text {
+    flex: 1; /* O texto ocupa a maior parte do espaço */
+    padding-right: 30px; /* Espaço à direita do texto */
+    text-align: justify; /* Justifica o texto */
+}
+
+/* Estilo da imagem na introdução */
+.image-preview {
+    flex: 0 0 40%; /* A imagem ocupa 40% da largura disponível */
+    display: flex;
+    justify-content: center;
+}
+
+.image-preview img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+/* Container principal para texto e imagem */
+.infraestrutura-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo do bloco de texto */
+.infraestrutura-texto {
+    flex: 1; /* O texto ocupa a maior parte do espaço */
+    padding-right: 20px; /* Espaço à direita do texto */
+}
+
+.infraestrutura-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #58B036;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.infraestrutura h3 {
+    color: #58B036;
+    margin: 0 0 10px;
+}
+
+.infraestrutura p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Container da imagem */
+.infraestrutura-imagem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 40%; /* A imagem ocupará 40% da largura disponível */
+}
+
+/* Estilo da imagem */
+.infraestrutura-imagem {
+    max-width: 100%; /* A imagem ocupará todo o espaço disponível no container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil na imagem */
+}
+
+/* Container principal para a imagem e o texto */
+.impactos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo do bloco de texto */
+.impactos-texto {
+    flex: 1; /* O texto ocupa a maior parte do espaço */
+    padding-left: 20px; /* Espaço à esquerda do texto */
+}
+
+.impacto {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #58B036;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.impacto h3 {
+    color: #58B036;
+    margin: 0 0 10px;
+}
+
+.impacto p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Container da imagem */
+.impacto-imagem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 40%; /* A imagem ocupará 40% da largura disponível */
+    padding-right: 20px;
+}
+
+.impacto-imagem {
+    max-width: 100%; /* A imagem ocupará todo o espaço disponível no container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil na imagem */
+}
+
+/* Container principal para a imagem e o texto */
+.coeficiente-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo do bloco de texto */
+.coeficiente-texto {
+    flex: 1; /* O texto ocupa a maior parte do espaço */
+    padding-left: 20px; /* Espaço à esquerda do texto */
+}
+
+.coeficiente {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #58B036;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.coeficiente h3 {
+    color: #58B036;
+    margin: 0 0 10px;
+}
+
+.coeficiente p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Container da imagem */
+.coeficiente-imagem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 40%; /* A imagem ocupará 40% da largura disponível */
+    padding-right: 20px;
+}
+
+.coeficiente-imagem {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
