@@ -82,6 +82,10 @@ footer {
 .container p {
     font-size: 18px;
     margin-bottom: 30px;
+    max-width: 600px; /* Define a largura máxima para quebrar o texto */
+    
+   
+line-height: 1.6; /* Ajusta o espaçamento entre linhas */
 }
 
 .cta-button {
@@ -112,6 +116,21 @@ footer {
     flex: 1; /* O texto ocupa a maior parte do espaço */
     padding-right: 30px; /* Espaço à direita do texto */
     text-align: justify; /* Justifica o texto */
+    
+}
+
+.highlight {
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.verde {
+    color: green; /* Cor verde para parte do texto */
+    font-size: 100px;
+}
+
+.preto {
+    color: black; /* Cor preta para parte do texto */
+    font-size: 100px;
 }
 
 /* Estilo da imagem na introdução */
