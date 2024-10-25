@@ -452,9 +452,7 @@ h3{
     animation: slide 40s infinite; /* Animação de deslizar a cada 20 segundos */
 }
 
-.slide {
-    min-width: 25%; /* Cada imagem ocupa 25% do espaço (4 imagens) */
-}
+
 
 .explore__wrapper-inner img {
     width: 100%; /* Ajusta a imagem para preencher o slide */
@@ -463,17 +461,6 @@ h3{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil na imagem */
 }
 
-@keyframes slide {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(0); } /* Mantém a primeira imagem visível */
-    25% { transform: translateX(-100%); }
-    45% { transform: translateX(-100%); } /* Mantém a segunda imagem visível */
-    50% { transform: translateX(-200%); }
-    70% { transform: translateX(-200%); } /* Mantém a terceira imagem visível */
-    75% { transform: translateX(-300%); }
-    95% { transform: translateX(-300%); } /* Mantém a quarta imagem visível */
-    100% { transform: translateX(0); } /* Volta para a primeira imagem */
-}
 
 /* Para dispositivos móveis */
 @media (max-width: 768px) {
