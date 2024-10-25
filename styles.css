@@ -35,6 +35,25 @@ nav a:hover {
     background-color: #5de527;
 }
 
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* Checkbox oculto */
+.menu-toggle {
+    display: none;
+}
+
 main {
     padding: 20px;
 }
@@ -56,6 +75,7 @@ footer {
     display: flex;
     gap: 15px;
     margin-top: 10px;
+    flex-direction: column;
 }
 
 .footer-nav a {
@@ -335,7 +355,7 @@ line-height: 1.6; /* Ajusta o espaçamento entre linhas */
 
 /* Mantém a cor e estilo ao ativar */
 .opportunity.active {
-    background-color: #66BB6A;
+    background-color: #58B036;
 }
 
 .opportunity.active .opportunity__title,
@@ -453,4 +473,166 @@ h3{
     75% { transform: translateX(-300%); }
     95% { transform: translateX(-300%); } /* Mantém a quarta imagem visível */
     100% { transform: translateX(0); } /* Volta para a primeira imagem */
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        max-width: 200px; /* Ajusta o tamanho do logo */
+    }
+
+    nav {
+        display: none; /* Esconde o nav para a versão mobile */
+    }
+
+    .hamburger {
+        display: flex; /* Mostra o botão de menu */
+    }
+
+    .intro-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text {
+        padding-right: 0;
+    }
+
+    .image-preview {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .infraestrutura-container,
+    .impactos-container,
+    .coeficiente-container {
+        flex-direction: column;
+    }
+
+    .infraestrutura-imagem-container,
+    .impacto-imagem-container,
+    .coeficiente-imagem-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .opportunities__title-main, 
+    .opportunities__title-main2 {
+        font-size: 24px; /* Reduz o tamanho dos títulos */
+    }
+
+    .opportunity {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: clamp(1.5rem, 3vw, 2rem); /* Ajuste o tamanho da fonte */
+    }
+
+    .intro-content h1.verde, .intro-content h1.preto {
+        font-size: clamp(2rem
+        , 6vw, 4rem); /* Tamanho do título responsivo */
+    }
+
+    .intro-text p,
+    .infraestrutura p,
+    .impacto p {
+        font-size: clamp(0.9rem, 3vw, 1.2rem); /* Texto proporcional */
+    }
+    .verde, .preto {
+            font-size: clamp(2rem, 6vw, 4rem); /* Tamanho responsivo */
+        }
+}
+
+@media (max-width: 480px) {
+    .opportunities {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .opportunities__title-main,
+    .opportunities__title-main2 {
+        font-size: 6vw; /* Ajusta o tamanho do texto para ocupar a largura da tela */
+        line-height: 1.2;
+    }
+
+    .opportunities__body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Espaçamento entre os itens */
+    }
+
+    .opportunity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f4f4f4; /* Adicione um fundo leve para destacar */
+    }
+
+    .opportunity__icon {
+        max-width: 60px; /* Ajusta o tamanho do ícone */
+        height: auto;
+    }
+
+    .opportunity__title {
+        font-size: 5vw; /* Ajusta o tamanho do título */
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .opportunity__description {
+        font-size: 4vw; /* Ajusta o tamanho da descrição */
+        text-align: justify;
+        padding: 5px;
+    }
+
+    /* Ajuste das imagens */
+    .image-preview img,
+    .infraestrutura-imagem,
+    .impacto-imagem,
+    .coeficiente-imagem {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Oculta a navegação principal */
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #58B036;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    /* Mostra o ícone do menu hambúrguer */
+    .menu-icon {
+        display: flex;
+    }
+
+    /* Exibe o menu quando o checkbox está marcado */
+    .menu-toggle:checked + .menu-icon + nav {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
 }
